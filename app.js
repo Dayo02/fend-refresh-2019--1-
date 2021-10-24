@@ -11,30 +11,32 @@
  * 
  * JS Standard: ESlint
  * 
-*/
+ */
 
 /**
  * Comments should be present at the beginning of each procedure and class.
  * Great to have comments before crucial code sections within the procedure.
-*/
+ */
 
 /**
  * Define Global Variables
  * 
-*/
+ */
 const nav = document.querySelector('nav');
 const  frag=document.createDocumentFragment();
 const ul=document.querySelector('ul');
 const mainHeader =document.querySelector('h1');
 const sec =document.querySelectorAll('section');
 const mylis =document.querySelectorAll('select-active-li');
-
-
 /**
  * End Global Variables
  * Start Helper Functions
  * 
-*/
+ */
+
+
+
+
 
 
 
@@ -42,9 +44,10 @@ const mylis =document.querySelectorAll('select-active-li');
  * End Helper Functions
  * Begin Main Functions
  * 
-*/
+ */
 
 // build the nav
+
 nav.style.color = 'black';
 nav.style.backgroundColor = "#79bb2e"; 
 nav.style.padding = "20px";
@@ -72,7 +75,9 @@ document.body.appendChild(frag);
 
 
 
-// Add class 'active' to section when near top of viewport
+
+// Add class 'active' to section when near top of viewport  
+
 let options = {
     root: document.querySelector('#scrollArea'),
     rootMargin: '0px',
@@ -106,7 +111,7 @@ let options = {
      
 
 
-// Scroll to anchor ID using scrollTO event
+ // Scroll to anchor ID using scrollTO event
 
 
 /**
@@ -120,6 +125,7 @@ let options = {
 // Scroll to section on link click
 
 // Set sections as active
+
  
 function callback(_entries){
     _entries.forEach( (y) => {
@@ -171,5 +177,3 @@ function callback2(_entries2){
         }
     });        
 };
-
-
